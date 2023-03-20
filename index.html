@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- body:start -->
+
+<body>
+    <!-- main-container:start -->
+    <div class="main-container d-flex flex-grow">
+        <!-- sidebar:start -->
+        <div class="sidebar d-flex flex-column h-100">
+            <!-- title-div:start -->
+            <div class="title d-flex item-center"><span class="logo d-flex item-center content-center">D</span><span
+                    class="ml-10 company-name">Dashboard Kit</span>
+            </div>
+            <!-- title-div:end -->
+            <!-- sidebar-links-1:start -->
+            <div class="sidebar-links-div-1">
+                <ul class="sidebar-links">
+                    <li><a><span class="link-logo fa fa-pie-chart mr-15 hw-15"></span><span
+                                class="link-title">Overview</span></a>
+                    </li>
+                    <li><a><span class="link-logo fa fa-ticket mr-15 hw-15"></span><span
+                                class="link-title">Tickets</span></a>
+                    </li>
+                    <li><a><span class="link-logo fa fa-lightbulb-o mr-15 hw-15"></span><span
+                                class="link-title">Ideas</span></a>
+                    </li>
+                    <li><a><span class="link-logo fa fa-users mr-15 hw-15"></span><span
+                                class="link-title">Contacts</span></a>
+                    </li>
+                    <li><a><span class="link-logo fa fa-user mr-15 hw-15"></span><span
+                                class="link-title">Agents</span></a>
+                    </li>
+                    <li><a><span class="link-logo fa fa-book mr-15 hw-15"></span><span
+                                class="link-title">Articles</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-links-1:end -->
+            <!-- sidebar-links-2:start -->
+            <div class="sidebar-links-div-2">
+                <ul class="sidebar-links">
+                    <li><a><span class="link-logo fa fa-cog mr-15 hw-15"></span><span
+                                class="link-title">Settings</span></a>
+                    </li>
+                    <li><a><span class="link-logo fa fa-diamond mr-15 hw-15"></span><span
+                                class="link-title">Subscriptions</span></a>
+                    </li>
+            </div>
+            <!-- sidebar-links-2:start -->
+        </div>
+        <!-- sidebar:end -->
+        <!-- container:start -->
+        <div class="container d-flex flex-column flex-grow">
+            <!-- header:start -->
+            <header class="header d-flex space-between item-center"><span class="page-title">Ticket</span>
+                <div class="user-info d-flex item-center">
+                    <span class="fa fa-search search"></span>
+                    <span class="fa fa-bell ml-20 bell"></span>
+                    <span class="user-name ml-10">Jones Ferdinand</span>
+                    <img class="header-user-profile ml-10" src="assests/user-profile.png" alt="">
+                </div>
+            </header>
+            <!-- header:end -->
+            <!-- table-container:start -->
+            <div class="table-contailer d-flex flex-column space-between">
+                <div class="d-flex flex-column overflow-hidden">
+                    <div class="table-header d-flex space-between item-center "><span class="table-title">All
+                            Tickets</span>
+                        <div class="table-header-buttons"><button class="sort-btn"><span
+                                    class="fa fa-sort-amount-desc sort-icon"></span>Sort</button>
+                            <button class="filter-btn "><span class="fa fa-filter filter-icon"></span>Filter</button>
+                        </div>
+                    </div>
+                    <div class="table-section">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Ticket details</th>
+                                    <th>Customer name</th>
+                                    <th>Date</th>
+                                    <th>Priority</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-high">HIGH</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-low">LOW</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-normal">NORMAL</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-high">HIGH</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-high">HIGH</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-high">HIGH</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-low">LOW</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-normal">NORMAL</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-high">HIGH</button></td>
+
+                                    <td>
+                                        <section class="fa fa-ellipsis-v">
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex item-center">
+                                            <img class="user-profile ml-10" src="assests/user-profile.png" alt="">
+                                            <div class=" ml-10 d-flex flex-column space-between"><span>Contact Email not
+                                                    Linked</span><span class="fs-12">Updated 1
+                                                    day ago</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>Tom Cruisr</span><span
+                                                class="fs-12">on
+                                                24/05/2019</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column space-between"><span>May 24, 2019</span><span
+                                                class="fs-12">
+                                                6:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td><button class="priority-high">HIGH</button></td>
+
+                                    <td>
+                                        <section>
+                                            <option class="fa fa-ellipsis-v"></option>
+                                            <option value=""></option>
+                                        </section>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="table-footer d-flex item-center content-end">
+                    <div><span>Rows per Page: </span><select name="" class="options">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select></div>
+                    <span class=" ml-20">1-8 of 1240</span>
+                    <button class="fa fa-chevron-left backward-btn ml-20"></button>
+                    <button class="fa fa-chevron-right forward-btn ml-10"></button>
+                </div>
+            </div>
+            <!-- table-container:end -->
+        </div>
+        <!-- container:end -->
+    </div>
+    <!-- main-container:end -->
+</body>
+<!-- body:end -->
+
+</html>
